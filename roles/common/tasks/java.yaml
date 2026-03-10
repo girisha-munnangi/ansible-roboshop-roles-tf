@@ -1,0 +1,13 @@
+- name : installing maven
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - maven
+    - mysql
+
+- name : installilng dependencies
+  ansible.builtin.command: mvn clean package
+  args:
+    chdir: /app
+

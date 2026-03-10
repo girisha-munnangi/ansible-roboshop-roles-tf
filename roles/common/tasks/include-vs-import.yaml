@@ -1,0 +1,15 @@
+- name : msg1
+  ansible.builtin.debug:
+    msg: "hi from msg1"
+
+- name : msg2
+  ansible.builtin.debug:
+    msg: "hi from msg2"
+
+- name : set the os fact
+  ansible.builtin.set_fact:
+    os: "debian"
+
+- name : msg3
+  ansible.builtin.debug:
+    msg: "hi from msg3"
