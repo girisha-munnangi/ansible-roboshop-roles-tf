@@ -1,11 +1,11 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
-MONGODB_HOST:  mongodb-dev.girisha.online
-REDIS_HOST: redis-dev.girisha.online
-CATALOGUE_HOST : catalogue-dev.girisha.online
-RABBITMQ_HOST: rabbitmq-dev.girisha.online
-MYSQL_HOST: mysql-dev.girisha.online
-USER_HOST : user-dev.girisha.online
-CART_HOST: cart-dev.girisha.online
-PAYMENT_HOST: payment-dev.girisha.online
-SHIPPING_HOST: shipping-dev.girisha.online
+MONGODB_HOST:  mongodb-{{ env }}.girisha.online
+REDIS_HOST: redis-{{ env }}.girisha.online
+CATALOGUE_HOST : catalogue-{{ env }}.girisha.online
+RABBITMQ_HOST: rabbitmq-{{ env }}.girisha.online
+MYSQL_HOST: mysql-{{ env }}.girisha.online
+USER_HOST : user-{{ env }}.girisha.online
+CART_HOST: cart-{{ env }}.girisha.online
+PAYMENT_HOST: payment-{{ env }}.girisha.online
+SHIPPING_HOST: shipping-{{ env }}.girisha.online
