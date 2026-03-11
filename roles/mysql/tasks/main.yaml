@@ -11,9 +11,7 @@
 
 - name: setting root password
   ansible.builtin.command: mysql_secure_installation --set-root-pass "{{ MYSQL_ROOT_PASSWORD }}"
-- name: Get MySQL root password from SSM
-  ansible.builtin.set_fact:
-    MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', 'roboshop.dev.mysql.root_password', region='us-east-1', decrypt=True) }}"
+  
 
 - name : install botocore and boto3
   ansible.builtin.pip:
