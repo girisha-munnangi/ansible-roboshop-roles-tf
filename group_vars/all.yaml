@@ -9,4 +9,3 @@ USER_HOST : user-dev.girisha.online
 CART_HOST: cart-dev.girisha.online
 PAYMENT_HOST: payment-dev.girisha.online
 SHIPPING_HOST: shipping-dev.girisha.online
-environment: dev
